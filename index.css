@@ -1,0 +1,86 @@
+:root {
+    --body-bk: #1C1C1C;
+    --content-bk: #1F2937;
+    --main-green: #10B981;
+    --main-white: #fff;
+    --psw-bk: #273549;
+    --line: #2F3E53;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--main-white)
+}
+
+body {
+    background-color: var(--body-bk);
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content {
+    width: 34rem;
+    height: 32rem;
+    background: var(--content-bk);
+}
+
+header {
+    margin-top: 7rem;
+    margin-left: 3rem;
+}
+
+header h1 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.header-text {
+    color: var(--main-green);
+    display: block;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    background-color: var(--main-green);
+    padding: 9px 17px 9px 15px;
+    border-radius: 6px;
+    width: 191px;
+    height: 42px;
+    margin: 52px 52px 0 52px;
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn:active {
+    filter: brightness(1.5);
+}
+
+.line {
+    border-bottom: 1px solid var(--line);
+    margin: 35px 52px;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; 
+}
+
+.psw-btn {
+    width: 13rem;
+    height: 2.4rem;
+    background: var(--psw-bk);
+    border-radius: 6px;
+    border: none;
+    color: var(--main-green);
+}
